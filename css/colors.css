@@ -1,0 +1,47 @@
+.fg-primary-1 {
+    color: #011A27 !important;
+}
+
+.fg-primary-2 {
+    color: #063852 !important;
+}
+
+.fg-accent-1 {
+    color: #F0810F !important;
+}
+
+.fg-accent-2 {
+    color: #E6DF44 !important;
+}
+
+.bg-primary-1 {
+    background-color: #011A27 !important;
+}
+
+.bg-primary-2 {
+    background-color: #063852 !important;
+}
+
+.bg-accent-1 {
+    background-color: #F0810F !important;
+}
+
+.bg-accent-2 {
+    background-color: #E6DF44 !important;
+}
+
+.border-primary-1 {
+    border-color: #011A27 !important;
+}
+
+.border-primary-2 {
+    border-color: #063852 !important;
+}
+
+.border-accent-1 {
+    border-color: #F0810F !important;
+}
+
+.border-accent-2 {
+    border-color: #E6DF44 !important;
+}
