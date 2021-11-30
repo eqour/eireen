@@ -1,0 +1,25 @@
+.person-box {
+    width: 300px;
+    height: 300px;
+}
+.person-box img {
+    width: 250px;
+    height: 250px;
+}
+
+@media (max-width: 1200px) {
+    .person-box {
+        width: 150px;
+        height: 150px;
+    }
+    .person-box img {
+        width: 150px;
+        height: 150px;
+    }
+    .person-box p.h4 {
+        font-size: medium;
+    }
+    .person-box p {
+        font-size: x-small;
+    }
+}
