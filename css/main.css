@@ -27,3 +27,7 @@
         font-size: x-small;
     }
 }
+
+.fade-in-item {
+    opacity: 0;
+}
