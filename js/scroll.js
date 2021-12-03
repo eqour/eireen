@@ -1,18 +1,41 @@
+let fadeInItems = [];
+
 $(document).ready(function() {
-    showItemsInWindowScope();
-    $(document).scroll(showItemsInWindowScope);
+    if (isMobile()) {
+        $('.fade-in-item').each(function() {
+            showItem($(this));
+        });
+    } else {
+        $('.fade-in-item').each(function() {
+            fadeInItems.push({
+                item: $(this),
+                visible: false
+            })
+        });
+        showItemsInWindowScope();
+        $(document).scroll(showItemsInWindowScope);
+    }
 });
 
 function showItemsInWindowScope() {
-    $('.fade-in-item').each(function () {
+    $(fadeInItems).each(function () {
         let scrollPosition = $(window).scrollTop() + $(window).height() / 1.25;
-        let element = $(this);
-        if (element.css('opacity') == 0 && scrollPosition >= element.offset().top) {
-            element.css('marginLeft', '+=50');
-            element.animate({
-                opacity: 1,
-                marginLeft: '-=50'
-            }, 700);
+        let item = $(this.item);
+        if (!this.visible && scrollPosition >= item.offset().top) {
+            this.visible = true;
+            showItem(item);
         }
     });
+}
+
+function showItem(item) {
+    item.css('marginLeft', '+=50');
+    item.animate({
+        opacity: 1,
+        marginLeft: '-=50'
+    }, 700);
+}
+
+function isMobile() {
+    return navigator.userAgent.match(/iPod|iPhone|iPad|Android/);
 }
