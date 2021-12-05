@@ -31,3 +31,8 @@
 .fade-in-item {
     opacity: 0;
 }
+
+.my-bg {
+    clip-path: circle(0%);
+    transition: clip-path 1s;
+}
