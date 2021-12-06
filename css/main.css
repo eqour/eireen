@@ -28,11 +28,28 @@
     }
 }
 
-.fade-in-item {
-    opacity: 0;
+.mask-wrapper {
+    position: relative;
 }
 
-.my-bg {
+.mask-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.mask-bottom {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.circle-item {
     clip-path: circle(0%);
-    transition: clip-path 1s;
+    transition: clip-path 2s;
+}
+
+.fade-in-item {
+    opacity: 0;
 }
