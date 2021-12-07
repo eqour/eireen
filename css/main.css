@@ -10,6 +10,19 @@
     width: 250px;
     height: 250px;
 }
+.main {
+    margin-top: 96px;
+}
+.scroll-down .fixed-top {
+    /*transform: translate3d(0, -100%, 0);*/
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+.scroll-up .fixed-top {
+    /*transform: none;*/
+    transition: 1s;
+}
+
 
 @media (max-width: 1200px) {
     .person-box {
