@@ -10,8 +10,8 @@
     width: 250px;
     height: 250px;
 }
-.main {
-    margin-top: 96px;
+main {
+    margin-top: 82px;
 }
 .scroll-down .fixed-top {
     /*transform: translate3d(0, -100%, 0);*/
@@ -20,7 +20,7 @@
 }
 .scroll-up .fixed-top {
     /*transform: none;*/
-    transition: 1s;
+    /*transition: 1s;*/
 }
 
 

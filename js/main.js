@@ -12,6 +12,8 @@ $(document).ready(function() {
     }, 0.6, 0.5);
 });
 
+
+
 let body = document.body;
 let nav = document.querySelector(".page-header nav");
 //const menu = document.querySelector(".page-header .menu");
@@ -27,11 +29,12 @@ window.addEventListener("scroll", () => {
         //console.log(1);
         return;
     }
-    console.log(body);
-    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    //console.log(body);
+    if (currentScroll > lastScroll && !body.classList.contains(scrollDown) && window.pageYOffset >= nav.clientHeight) {
         // down
         body.classList.remove(scrollUp);
         body.classList.add(scrollDown);
+        //console.log(nav.clientHeight); - 82px height
         //lottiePlayer.play();
     } else if (
         currentScroll < lastScroll &&
