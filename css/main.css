@@ -53,3 +53,14 @@
 .fade-in-item {
     opacity: 0;
 }
+
+.partner-logo {
+    height: 130px;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+    opacity: 0;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+}
