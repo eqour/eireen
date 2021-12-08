@@ -64,3 +64,7 @@
 .partner-logo:hover {
     filter: grayscale(0%);
 }
+
+#main-functions img {
+    height: 90px;
+}
