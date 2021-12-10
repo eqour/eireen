@@ -64,3 +64,8 @@
 #main-functions img {
     height: 90px;
 }
+
+.stat {
+    transition:all;
+    overflow:hidden;
+}
