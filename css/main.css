@@ -68,3 +68,15 @@
 .stat {
     overflow:hidden;
 }
+
+#usage-examples-carousel .carousel-item {
+    height: 500px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#usage-examples-carousel .carousel-caption {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
