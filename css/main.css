@@ -28,6 +28,20 @@
     }
 }
 
+main {
+    margin-top: 82px;
+}
+
+.scroll-down .fixed-top {
+    /*transform: translate3d(0, -100%, 0);*/
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+.scroll-up .fixed-top {
+    /*transform: none;*/
+    /*transition: 1s;*/
+}
+
 .mask-wrapper {
     position: relative;
 }
