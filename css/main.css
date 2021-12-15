@@ -26,9 +26,23 @@
     .person-box p {
         font-size: x-small;
     }
+    /*#icons-col {
+        display: block;
+    }*/
+    #icons-col .row {
+        display: block;
+        margin: auto;
+        
+    }
+        #icons-col .row div {
+            /*display: block;*/
+            padding: 10px;
+            /*margin: auto;
+            position: relative;*/
+        }
 }
 
-main {
+.main {
     margin-top: 82px;
 }
 
