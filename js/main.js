@@ -84,6 +84,8 @@ window.addEventListener("scroll", () => {
         clearTimeout(timer);
     }
     timer = setTimeout(function () {
+        if (window.pageYOffset == 0)
+            clck = false;
         if (clck) {
             body.classList.remove(scrollUp);
             body.classList.add(scrollDown);
