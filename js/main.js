@@ -50,6 +50,12 @@ let nav = document.querySelector(".page-header nav");
 let scrollUp = "scroll-up";
 let scrollDown = "scroll-down";
 let lastScroll = 0;
+let timer = null;
+let clck = false;
+
+//document.getElementsByTagName("a").addEventListener("click", () => {
+//    clck = true;
+//})
 
 window.addEventListener("scroll", () => {
     var currentScroll = window.pageYOffset;
@@ -74,5 +80,30 @@ window.addEventListener("scroll", () => {
         body.classList.add(scrollUp);
         //lottiePlayer.stop();
     }
+    if (timer != null) {
+        clearTimeout(timer);
+    }
+    timer = setTimeout(function () {
+        if (clck) {
+            body.classList.remove(scrollUp);
+            body.classList.add(scrollDown);
+            clck = false;
+        }
+    }, 150)
     lastScroll = currentScroll;
 });
+
+function callback(e) {
+    var e = window.e || e;
+
+    if (e.target.tagName !== 'A')
+        return;
+
+    // Do something
+    clck = true;
+}
+
+if (document.addEventListener)
+    document.addEventListener('click', callback, false);
+else
+    document.attachEvent('onclick', callback);
