@@ -108,3 +108,19 @@
 #usage-examples-carousel .carousel-caption {
     background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 }
+
+.h1-a {
+    font-size: 2.5rem;
+}
+.fs-5-a {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+    .h1-a {
+        font-size: 1.75rem;
+    }
+    .fs-5-a {
+        font-size: 1rem;
+    }
+}
