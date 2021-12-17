@@ -24,6 +24,14 @@ $(document).ready(function() {
             animateIncrease(this, Number.parseInt(this.getAttribute('data-max')));
         });
     }, 1, 0);
+
+    if (window.pageYOffset >= nav.clientHeight) {
+        body.classList.remove(scrollUp);
+        body.classList.add(scrollDown);
+        //console.log(document.activeElement);
+        
+    }
+    
 });
 
 function animateIncrease(item, number) {

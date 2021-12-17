@@ -42,6 +42,27 @@
         }
 }
 
+@media (max-width: 1366px) {
+    .person-box {
+        width: 260px;
+        height: 260px;
+    }
+
+        
+        .person-box img {
+            width: 200px;
+            height: 200px;
+        }
+
+        /*.person-box p.h4 {
+            font-size: medium;
+        }
+
+        .person-box p {
+            font-size: x-small;
+        }*/
+}
+
 .main {
     margin-top: 82px;
 }
