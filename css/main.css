@@ -131,17 +131,26 @@
 }
 
 .h1-a {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 .fs-5-a {
-    font-size: 1.25rem;
+    font-size: 2.25rem;
+}
+
+@media (max-width: 1500px) {
+    .h1-a {
+        font-size: 2.75rem;
+    }
+    .fs-5-a {
+        font-size: 1.60rem;
+    }
 }
 
 @media (max-width: 1200px) {
     .h1-a {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     .fs-5-a {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
