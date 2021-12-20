@@ -136,6 +136,21 @@
 .fs-5-a {
     font-size: 2.25rem;
 }
+.display-header-a {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    font-weight: 900;
+    left: 20%;
+    top: 100px;
+}
+.display-text-a {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 100;
+    left: 15%;
+    margin-right: 25%;
+    top: 20%;
+}
 
 @media (max-width: 1500px) {
     .h1-a {
@@ -152,5 +167,34 @@
     }
     .fs-5-a {
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .display-text-a {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        left: 20%;
+        margin-right: 20%;
+        top: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .display-header-a {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        font-weight: 900;
+        top: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .display-text-a {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        left: 20%;
+        margin-right: 20%;
+        top: 40%;
     }
 }
