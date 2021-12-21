@@ -26,17 +26,12 @@ $(document).ready(function() {
     }, 1, 0);
 
     if (window.pageYOffset >= nav.clientHeight) {
-        body.classList.remove(scrollUp);
         body.classList.add(scrollDown);
-        //console.log(document.activeElement);
-        
     }
 
     let navigationLinks = $('header nav .nav a');
     $(window).on('hashchange', highlightCurrentPageLink);
     highlightCurrentPageLink();
-
-    console.log(navigationLinks);
 
     function highlightCurrentPageLink() {
         navigationLinks.each(function () {
@@ -47,8 +42,6 @@ $(document).ready(function() {
                 this.classList.remove('fg-accent-1');
                 this.classList.add('fg-accent-2');
             }
-            console.log(window.location.href, this.href);
-            console.log(window.location.hash);
         });
     }
 });
@@ -72,40 +65,25 @@ function numberWithSpaces(number) {
 
 let body = document.body;
 let nav = document.querySelector(".page-header nav");
-//const menu = document.querySelector(".page-header .menu");
-//const lottiePlayer = document.querySelector("lottie-player");
-let scrollUp = "scroll-up";
 let scrollDown = "scroll-down";
 let lastScroll = 0;
 let timer = null;
 let clck = false;
 
-//document.getElementsByTagName("a").addEventListener("click", () => {
-//    clck = true;
-//})
-
 window.addEventListener("scroll", () => {
     var currentScroll = window.pageYOffset;
     if (currentScroll <= 0) {
-        body.classList.remove(scrollUp);
-        //console.log(1);
         return;
     }
-    //console.log(body);
     if (currentScroll > lastScroll && !body.classList.contains(scrollDown) && window.pageYOffset >= nav.clientHeight) {
         // down
-        body.classList.remove(scrollUp);
         body.classList.add(scrollDown);
-        //console.log(nav.clientHeight); - 82px height
-        //lottiePlayer.play();
     } else if (
         currentScroll < lastScroll &&
         body.classList.contains(scrollDown)
     ) {
         // up
         body.classList.remove(scrollDown);
-        body.classList.add(scrollUp);
-        //lottiePlayer.stop();
     }
     if (timer != null) {
         clearTimeout(timer);
@@ -114,7 +92,6 @@ window.addEventListener("scroll", () => {
         if (window.pageYOffset == 0)
             clck = false;
         if (clck) {
-            body.classList.remove(scrollUp);
             body.classList.add(scrollDown);
             clck = false;
         }
