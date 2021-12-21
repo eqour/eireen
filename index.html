@@ -15,14 +15,14 @@
                 <a href="index.html" class="d-flex align-items-center col-md-auto mb-2 mb-md-0 text-dark text-decoration-none">
                     <img id="logo" src="images/logom.png" alt="Eireen" />
                 </a>
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
                     <li><a href="#" class="nav-link px-2 link-light fg-accent-1">О нас</a></li>
                     <li><a href="#team" class="nav-link px-2 link-secondary fg-accent-2">Команда</a></li>
                     <li><a href="#partners" class="nav-link px-2 link-secondary fg-accent-2">Партнёры</a></li>
                     <li><a href="control-and-management.html" class="nav-link px-2 link-secondary fg-accent-2">Контроль и управление</a></li>
                 </ul>
-                <div class="col-12 col-md-auto d-flex justify-content-center">
-                    <div class="text-end fg-accent-1 me-3">
+                <div class="col-12 col-md-auto d-none d-md-flex justify-content-center">
+                    <div class="text-end fg-accent-1 me-3 d-none d-lg-block">
                         <a href="mailto:eireen@gmail.com" class="text-decoration-none fg-accent-1">eireen@gmail.com</a>
                         <br />
                         <a href="tel:+79913987838" class="text-decoration-none fg-accent-1">+7 (991) 398-78-38</a>
@@ -30,6 +30,17 @@
                     <div class="d-flex align-items-center">
                         <a href="#contact" class="btn btn-primary bg-accent-1 border-accent-1">Связаться</a>
                     </div>
+                </div>
+                <div class="col d-flex d-md-none justify-content-end">
+                    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#header-collapse">x</button>
+                </div>
+                <div class="col-12 collapse" id="header-collapse">
+                    <ul class="nav d-flex flex-column">
+                        <li><a href="#" class="nav-link px-2 link-light fg-accent-1">О нас</a></li>
+                        <li><a href="#team" class="nav-link px-2 link-secondary fg-accent-2">Команда</a></li>
+                        <li><a href="#partners" class="nav-link px-2 link-secondary fg-accent-2">Партнёры</a></li>
+                        <li><a href="control-and-management.html" class="nav-link px-2 link-secondary fg-accent-2">Контроль и управление</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
