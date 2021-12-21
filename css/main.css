@@ -11,6 +11,8 @@
     height: 250px;
 }
 
+ 
+
 @media (max-width: 1200px) {
     .person-box {
         width: 150px;
@@ -26,20 +28,18 @@
     .person-box p {
         font-size: x-small;
     }
-    /*#icons-col {
-        display: block;
-    }*/
-    #icons-col .row {
+   
+    /*#icons-col .row {
         display: block;
         margin: auto;
         
-    }
-        #icons-col .row div {
+    }*/
+        /*#icons-col .row div {*/
             /*display: block;*/
-            padding: 10px;
+            /*padding: 3px;*/
             /*margin: auto;
             position: relative;*/
-        }
+        /*}*/
 }
 
 @media (max-width: 1366px) {
@@ -178,6 +178,14 @@
         margin-right: 20%;
         top: 40%;
     }
+}
+
+@media (max-width: 768px) {
+    #icons-col {
+        display: block;
+        padding: 0px;
+    }
+}
 }
 
 @media (max-width: 600px) {
