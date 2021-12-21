@@ -31,7 +31,26 @@ $(document).ready(function() {
         //console.log(document.activeElement);
         
     }
-    
+
+    let navigationLinks = $('header nav .nav a');
+    $(window).on('hashchange', highlightCurrentPageLink);
+    highlightCurrentPageLink();
+
+    console.log(navigationLinks);
+
+    function highlightCurrentPageLink() {
+        navigationLinks.each(function () {
+            if (this.href === window.location.href) {
+                this.classList.remove('fg-accent-2');
+                this.classList.add('fg-accent-1');
+            } else {
+                this.classList.remove('fg-accent-1');
+                this.classList.add('fg-accent-2');
+            }
+            console.log(window.location.href, this.href);
+            console.log(window.location.hash);
+        });
+    }
 });
 
 function animateIncrease(item, number) {
