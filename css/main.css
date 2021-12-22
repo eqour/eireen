@@ -29,6 +29,12 @@
     color: white !important;
 }
 
+@media (max-width: 767px) {
+    .static-header {
+        width: 100% !important;
+    }
+}
+
 .main {
     margin-top: 82px;
 }

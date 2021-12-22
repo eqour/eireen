@@ -33,9 +33,6 @@ $(document).ready(function() {
     resizeHeaderSpace();
     $(window).on('hashchange', highlightCurrentPageLink);
     $(window).on('resize', resizeHeaderSpace);
-    $('.navbar-toggler').click(function () {
-        setTimeout(resizeHeaderSpace, 500);
-    });
 });
 
 function highlightCurrentPageLink() {
@@ -68,7 +65,7 @@ function numberWithSpaces(number) {
 }
 
 function resizeHeaderSpace() {
-    $('main').css('marginTop', $('header nav').outerHeight(true));
+    $('main').css('marginTop', $('.static-header').outerHeight(true));
 }
 
 let body = document.body;
