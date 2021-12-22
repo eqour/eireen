@@ -18,6 +18,10 @@
     height: 90px;
 }
 
+.navbar-toggler svg {
+    fill: var(--color-primary-1);
+}
+
 .main {
     margin-top: 82px;
 }
