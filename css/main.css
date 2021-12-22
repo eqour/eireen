@@ -68,6 +68,10 @@
     overflow:hidden;
 }
 
+#icons-col div div a svg:hover {
+    color: #F0810F;
+}
+
 /* Person box */
 .person-box {
     width: 300px;
@@ -178,15 +182,15 @@
 }
 /* Adaptive text */
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     #icons-col {
         display: block;
         padding: 0px;
     }
-}
+}*/
 
 @media (min-width: 769px) {
-    #icons-col .col ul li {
+    #icons-col .col-12 ul li {
         width: 28vw;
     }
 }
