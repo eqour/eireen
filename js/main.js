@@ -29,22 +29,26 @@ $(document).ready(function() {
         body.classList.add(scrollDown);
     }
 
-    let navigationLinks = $('header nav .nav a');
-    $(window).on('hashchange', highlightCurrentPageLink);
     highlightCurrentPageLink();
-
-    function highlightCurrentPageLink() {
-        navigationLinks.each(function () {
-            if (this.href === window.location.href) {
-                this.classList.remove('fg-accent-2');
-                this.classList.add('fg-accent-1');
-            } else {
-                this.classList.remove('fg-accent-1');
-                this.classList.add('fg-accent-2');
-            }
-        });
-    }
+    resizeHeaderSpace();
+    $(window).on('hashchange', highlightCurrentPageLink);
+    $(window).on('resize', resizeHeaderSpace);
+    $('.navbar-toggler').click(function () {
+        setTimeout(resizeHeaderSpace, 500);
+    });
 });
+
+function highlightCurrentPageLink() {
+    $('header nav .nav a').each(function () {
+        if (this.href === window.location.href) {
+            this.classList.remove('fg-accent-2');
+            this.classList.add('fg-accent-1');
+        } else {
+            this.classList.remove('fg-accent-1');
+            this.classList.add('fg-accent-2');
+        }
+    });
+}
 
 function animateIncrease(item, number) {
     let counter = 0;
@@ -61,6 +65,10 @@ function animateIncrease(item, number) {
 
 function numberWithSpaces(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+}
+
+function resizeHeaderSpace() {
+    $('main').css('marginTop', $('header nav').outerHeight(true));
 }
 
 let body = document.body;
