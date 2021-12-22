@@ -22,6 +22,19 @@
     fill: var(--color-primary-1);
 }
 
+.nav-link.fg-accent-1:hover {
+    color: white !important;
+}
+.nav-link.fg-accent-2:hover {
+    color: white !important;
+}
+
+@media (max-width: 767px) {
+    .static-header {
+        width: 100% !important;
+    }
+}
+
 .main {
     margin-top: 82px;
 }
