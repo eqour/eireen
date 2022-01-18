@@ -319,33 +319,33 @@
             <section id="contact-us" class="py-5 bg-accent-1">
                 <h2 class="h1 text-center text-light mb-5">Связаться с нами</h2>
                 <div class="container d-flex align-items-center justify-content-center">
-                    <form>
+                    <form method="POST">
                         <div class="row mb-3">
                             <div class="col-sm-6 text-center">
-                                <label class="visually-hidden" for="specificSizeInputName">Имя</label>
-                                <input type="text" class="form-control" id="specificSizeInputName" placeholder="Имя">
+                                <label class="visually-hidden" for="contactFormFirstName">Имя</label>
+                                <input type="text" class="form-control" id="contactFormFirstName" name="ContactForm[firstName]" placeholder="Имя">
                             </div>
                             <div class="col-sm-6 text-center">
-                                <label class="visually-hidden" for="specificSizeInputName">Фамилия</label>
-                                <input type="text" class="form-control" id="specificSizeInputName" placeholder="Фамилия">
+                                <label class="visually-hidden" for="contactFormLastName">Фамилия</label>
+                                <input type="text" class="form-control" id="contactFormLastName" name="ContactForm[lastName]" placeholder="Фамилия">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-sm-6 text-center">
-                                <label class="visually-hidden" for="specificSizeInputName">E-MAIL</label>
-                                <input type="text" class="form-control" id="specificSizeInputName" placeholder="E-MAIL">
+                                <label class="visually-hidden" for="contactFormEmail">E-MAIL</label>
+                                <input type="text" class="form-control" id="contactFormEmail" name="ContactForm[email]" placeholder="E-MAIL">
                             </div>
                             <div class="col-sm-6 text-center">
-                                <label class="visually-hidden" for="specificSizeInputName">Телефон</label>
-                                <input type="text" class="form-control" id="specificSizeInputName" placeholder="Телефон">
+                                <label class="visually-hidden" for="contactFormPhone">Телефон</label>
+                                <input type="text" class="form-control" id="contactFormPhone" name="ContactForm[phone]" placeholder="Телефон">
                             </div>
                         </div>
                         <div class="mb-10">
-                            <label class="visually-hidden" for="specificSizeInputName">Введите ваше сообщение</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Введите ваше сообщение"></textarea>
+                            <label class="visually-hidden" for="contactFormMessage">Введите ваше сообщение</label>
+                            <textarea class="form-control" id="contactFormMessage" rows="10" name="ContactForm[message]" placeholder="Введите ваше сообщение"></textarea>
                         </div>
                         <div class="col-md-15 text-center">
-                            <br /><button type="button" class="btn fg-accent-1 bg-white">Оставить контакты</button>
+                            <br /><button type="submit" class="btn fg-accent-1 bg-white">Оставить контакты</button>
                         </div>
                     </form>
                 </div>
