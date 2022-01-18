@@ -65,7 +65,7 @@ function numberWithSpaces(number) {
 }
 
 function resizeHeaderSpace() {
-    $('main').css('marginTop', $('.static-header').outerHeight(true));
+    $('main').css('marginTop', $('header nav').outerHeight(true));
 }
 
 let body = document.body;
