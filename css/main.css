@@ -11,7 +11,13 @@
     background-repeat: no-repeat;
 }
 #usage-examples-carousel .carousel-caption {
+    text-decoration: none;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    transition-duration: 100ms;
+    transition-property: color;
+}
+#usage-examples-carousel .carousel-caption:hover {
+    color: var(--color-accent-2);
 }
 
 #main-functions img {
@@ -65,6 +71,25 @@
 }
 .fade-in-item {
     opacity: 0;
+}
+
+.achievement-item {
+    text-decoration: none;
+}
+.achievement-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    transition-duration: 100ms;
+    transition-property: filter, transform;
+}
+.achievement-item:hover img {
+    filter: brightness(1.05);
+    transform: scale(1.05);
+}
+
+.btn-outline-none:focus {
+    box-shadow: none !important;
 }
 
 .partner-logo {
